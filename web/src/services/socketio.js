@@ -1,5 +1,8 @@
 import { io } from "socket.io-client";
-const socket = io.connect("https://pedrorbc.com", {
+
+import { SocketURL } from "./services-url";
+
+const socket = io.connect(SocketURL, {
     path: '/socket/socket.io'
 });
 export default socket;

@@ -1,7 +1,9 @@
 import axios from "axios";
 
+import { ApiUploadURL } from './services-url'
+
 const api = axios.create({
-  baseURL: "https://pedrorbc.com/api"
+  baseURL: ApiUploadURL+"/api"
 });
 
 export default api;
